@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+h1{
+    color: black;
+    line-height: 60px;
+    font-size: 50px;
+}
+h3{
+    font-size: 45px;
+    line-height: 50px;
+    color: black;
+}
+h4{
+    font-size: 30px;
+    color: black;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
