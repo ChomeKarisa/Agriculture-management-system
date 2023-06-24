@@ -1,24 +1,87 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-h1{
-    color: black;
-    line-height: 60px;
-    font-size: 50px;
+/*header styling*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0 5px 15px hwb(0 6% 94%);
+    position:sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    
 }
-h3{
-    font-size: 45px;
-    line-height: 50px;
-    color: black;
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h4{
+
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(48, 47, 47);
+    transition: 0.3s ease;
+}
+#nav li a:hover,
+#nav li a.active{
+    color:rgb(74, 213, 56) ;
+}
+
+#nav li a.active::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background:rgb(117, 231, 117);
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+}
+/*hero section styling*/
+
+#hero {
+    background-image: url(images/hero4.jpg);
+    background-position: top 25% right 0;
+    background-size: cover;
+    height:90vh;
+    width:auto;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h2{
+    padding-bottom: 15px;
+    color:white;
+    font-weight: 900;
+    font-size: 100px;
+}
+#hero p{
+    color: white;
+    font-weight: 800;
     font-size: 30px;
-    color: black;
+
 }
-p{
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
+#hero button{
+    background-image: url(images/pexels-flambo-1112080.jpg);
+    border: 0;
+    background-color:transparent;
+    color: black;
+    padding: 14px 70px 14px 60px;
+    cursor: pointer;
+
 }
