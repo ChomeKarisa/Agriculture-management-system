@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.section-padding{
+    padding:40px 80px;
+}
+.section-margin{
+    margin:40px 0;
+}
+h2{
+    font-size:45px ;
+    line-height:3px ;
+}
+h3{
+    font-size:25px ;
+    line-height:4px ;
+}
+p{
+    font-size: ;
+    color: rgb(139, 134, 134);
+    margin: 15px 0 20px 0;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+    color: black;
+}
+
+.heading span{
+    color: greenyellow;
+}
+/*header styling*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0 5px 15px hwb(0 6% 94%);
+    position:sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    
+}
+.toogle-btn{
+    font-size: 1rem;
+    cursor: pointer;
+    color: greenyellow;
+    border: .1rem solid greenyellow;
+    border-radius: .1rem;
+    padding: 5rem 1.5rem;
+    display: none;
+}
+
+#nav .toogle-btn i{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: .2rem solid black;
+    border-left: 5rem solid black;
+    background: white;
+}
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(48, 47, 47);
+    transition: 0.3s ease;
+}
+#nav li a:hover,
+#nav li a.active{
+    color:rgb(74, 213, 56) ;
+}
+
+#nav li a.active::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background:rgb(117, 231, 117);
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+}
+/*hero section styling*/
+
+
+
+#hero {
+    background-color:rgb(133, 196, 39);
+    background-blend-mode:lighten;
+    background-position: top 25% right 0;
+    background-size: cover;
+    height:90vh;
+    width:auto;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h2{
+    padding-bottom: 15px;
+    color:white;
+    font-weight: 900;
+    font-size: 100px;
+}
+#hero p{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+
+}
+#hero button{
+    background-image: url(images/pexels-flambo-1112080.jpg);
+    border: 0;
+    background-color:transparent;
+    color: black;
+    padding: 14px 70px 14px 60px;
+    cursor: pointer;
+
+}
+/*product hero section stylling*/
+#hero_1{
+    background-color: rgb(133, 196, 39);
+    background-position: top 25% right 0;
+    background-size: cover;
+    height:45vh;
+    width:auto;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search_items{
+    display: flex;
+    width: 50px;
+}
+.search_box{
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    background: none;
+    outline: none;
+}
+.search_button{
+    width: 20px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:black;
+    font-size: 10px;
+}
+
+/*-------/--------*/
+
+#feature{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#feature h2{
+    text-align: center;
+}
+ #feature .fe-area{
+    width:200px;
+    height: 200PX;
+    text-align:center;
+    padding: 25px 15px;
+    box-shadow: 15px 15px 35px rgb(203, 234, 203);
+    border: 1px solid whitesmoke ;
+    border-radius: 4px;
+    margin: 15px 0;
+    cursor: pointer;
+ }
+ 
+ #feature .fe-area:hover{
+    box-shadow: 10px 10px 24px rgb(117, 231, 117);
+}
+
+/*-------/---------*/
+#services{
+    position:relative ;
+    overflow: hidden;
+    padding:25px 15px;
+}
+.products{
+    padding: 25px 15px;
+    display: flex;
+    overflow-x:auto;
+    
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+.products_cards{
+    flex: 0 0 auto;
+    margin-right:  40px;
+    height: 250px; 
+    width: 350px;
+    
+}
+.products_image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.product_img{
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+}
+.card{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    transform: translateX(50%);
+    padding: 10px;
+    width: 90px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #e7edf5;
+    opacity: 0;
+    color: rgb(17, 18, 16);
+}
+
+.products_cards:hover .card{
+    opacity: 1;
+}
+.card:hover{
+    background: #63fa78;
+}
+
+.product_info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+.brand{
+    text-transform: uppercase;
+}
+.description{
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    opacity: 1;
+     
+}
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.service_card{
+    padding: 25px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    justify-content: space-between ;
+}
+.serv_card{
+    position: relative;
+}
+.serv_card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.serv_card p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50% -50%);
+    text-align: center;
+    color:white ;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.serv_card:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+/*---------------*/
+
+footer{
+    position: relative;
+    padding: 60px 10vw;
+    padding-bottom: 80px;
+    background: rgb(154, 227, 45);
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    #header #nav .toggle-btn{
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .toogle-btn{
+        display: initial;
+    }
+
+    #header .nav{
+        position:absolute;
+        top: 100; left: 0;right: 0;
+        background:white ;
+        border-top:1rem solid greenyellow ;
+        clip-path: polygon()
+    }
+
+    #header .nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: 2rem solid black;
+        border-left:4rem ;
+        background: white;
+    }
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 50%;
+    }
+}
