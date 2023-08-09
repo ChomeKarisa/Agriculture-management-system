@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0 5px 15px hwb(0 6% 94%);
+    position:sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    
+}
+.toogle-btn{
+    font-size: 1rem;
+    cursor: pointer;
+    color: greenyellow;
+    border: .1rem solid greenyellow;
+    border-radius: .1rem;
+    padding: 5rem 1.5rem;
+    display: none;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav .toogle-btn i{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: .2rem solid black;
+    border-left: 5rem solid black;
+    background: white;
+}
+#nav i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(48, 47, 47);
+    transition: 0.3s ease;
+}
+#nav li a:hover,
+#nav li a.active{
+    color:rgb(74, 213, 56) ;
+}
+
+#nav li a.active::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background:rgb(117, 231, 117);
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+}

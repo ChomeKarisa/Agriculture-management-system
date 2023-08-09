@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argriculture-Managment-System</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     
@@ -32,12 +33,76 @@
         <P>A solution to farmers in various areas. Are you a farmer and would like <br>
         to benefit from our services? Then join by signing up with us</P>
 
-        <button>sign up 
-            <a href="farmers.html"></a>
-        </button>
-         
-    </section>
+        <button class="signup"> sign up</button>
+        
 
+        <div class="wrapper">
+            <div class="form-login">
+            
+                
+                <form action="#">
+                    <div class="input-box">
+                        <input type="NAME" required>
+                        <label> NAME</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="PHONE" required>
+                        <label> PHONE</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="EMAIL" required>
+                        <label> EMAIL</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="PASSWORD" required>
+                        <label> PASSWORD</label> 
+                    </div>
+                    <div class="update">
+                        <label for=""><input type="checkbox">Remember Me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btnr">Login</button>
+
+                    <div class="register">
+                        <p>Don't have an account?<a href="" class="reg">REGISTER</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-Register">
+            
+                
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label> USERNAME</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="PHONE" required>
+                        <label> PHONE</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="EMAIL" required>
+                        <label> EMAIL</label> 
+                    </div>
+                    <div class="input-box">
+                        <input type="PASSWORD" required>
+                        <label> PASSWORD</label> 
+                    </div>
+                    <div class="update">
+                        <label for=""><input type="checkbox">I agree to T&C</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btnr">REGISTER</button>
+
+                    <div class="registeration">
+                        <p>already have an account?<a href="" class="reg-link">LOG IN</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
     <section id="feature" class="section-padding">
 
          <div class="fe-area">
@@ -64,7 +129,7 @@
 
     <section id="services" class="section-padding">
        <h3 class="heading"> Products & <span>Services</span></h3>
-         <div class="products">
+         <div class="products-container">
             <div class="products_cards">
                 <div class="products_image">
                     <img src="images/feature 1.jpg" class="product_img" alt="">
@@ -112,13 +177,13 @@
 
             <div class="products_cards">
                 <div class="products_image">
-                    <img src="images/feature 4.jpg" class="product_img" alt="">
+                    <img src="images/serv card 1.jpg" class="product_img" alt="">
                     <button class="card"> Get It </button>
                 </div>
                 <div class="product_info">
 
                     <h3><div class="brand">
-                        Fruits  
+                        Machinery  
                     </div></h3>
                     <p class="description">lorem ipsum . </p>
                     <span class="price"> ksh100 per net </span>
@@ -142,13 +207,28 @@
 
             <div class="products_cards">
                 <div class="products_image">
-                    <img src="images/banner 7.jpg" class="product_img" alt="">
+                    <img src="images/feature 8.jpg" class="product_img" alt="">
                     <button class="card"> Get It </button>
                 </div>
                 <div class="product_info">
 
                     <h3><div class="brand">
-                        Milk  
+                        nuts
+                    </div></h3>
+                    <p class="description">lorem ipsum . </p>
+                    <span class="price"> ksh70 per litre </span>
+                </div>
+            </div>
+
+            <div class="products_cards">
+                <div class="products_image">
+                    <img src="images/feature 12.jpg" class="product_img" alt="">
+                    <button class="card"> Get It </button>
+                </div>
+                <div class="product_info">
+
+                    <h3><div class="brand">
+                        cereals
                     </div></h3>
                     <p class="description">lorem ipsum . </p>
                     <span class="price"> ksh70 per litre </span>
@@ -190,12 +270,17 @@
          </div>
     </section>
 
+
+    
+
     <footer>
         <div class="foot">
-            <img src="images/agri hut LOGO 1.png" class="foot_logo" alt="">
+            <img src="images/agri hut LOGO 1.png" class="foot_logo" height="100" width="100" alt="">
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>  
